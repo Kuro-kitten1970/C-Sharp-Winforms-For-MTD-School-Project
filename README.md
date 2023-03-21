@@ -36,4 +36,5 @@
 ## เอกสารอ้างอิง
 
 ทางเราได้มีการจัดทำเอกสารขึ้นมาเพื่อให้พวกท่านได้ใช้ในการอ้างอิงเนื้อหา และนำไปประกอบการจัดทำโครงงานคอมพิวเตอร์ โดยทุกท่านสามารถตลิกที่ปุ่มด้านล่างนี้เพื่อเข้าชมเอกสาร
+
 <a class="button" href="https://docs.google.com/document/d/1boVGrmKsuQ8GAoloAz6_CN0i-6rlCV_YaBS4v2QZC94/edit?usp=sharing" aria-label="doc">![Open Document](https://img.shields.io/badge/OPEN-DOCUMENT-informational)</a>
