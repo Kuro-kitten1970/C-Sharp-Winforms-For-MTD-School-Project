@@ -1,9 +1,0 @@
-C:\Users\thont\AppData\Local\Temporary Projects\โปรแกรมคิดเงิน 1\bin\Debug\โปรแกรมคิดเงิน 1.exe
-C:\Users\thont\AppData\Local\Temporary Projects\โปรแกรมคิดเงิน 1\bin\Debug\โปรแกรมคิดเงิน 1.pdb
-C:\Users\thont\AppData\Local\Temporary Projects\โปรแกรมคิดเงิน 1\obj\x86\Debug\โปรแกรมคิดเงิน_1.mainProgram.resources
-C:\Users\thont\AppData\Local\Temporary Projects\โปรแกรมคิดเงิน 1\obj\x86\Debug\โปรแกรมคิดเงิน_1.Properties.Resources.resources
-C:\Users\thont\AppData\Local\Temporary Projects\โปรแกรมคิดเงิน 1\obj\x86\Debug\โปรแกรมคิดเงิน 1.csproj.GenerateResource.Cache
-C:\Users\thont\AppData\Local\Temporary Projects\โปรแกรมคิดเงิน 1\obj\x86\Debug\โปรแกรมคิดเงิน 1.exe
-C:\Users\thont\AppData\Local\Temporary Projects\โปรแกรมคิดเงิน 1\obj\x86\Debug\โปรแกรมคิดเงิน 1.pdb
-D:\1. Dev Project\C#\Csharp-Winform-for-Schoolworks-Term01\โปรแกรมคิดเงิน 1\โปรแกรมคิดเงิน 1\obj\x86\Debug\โปรแกรมคิดเงิน 1.exe
-D:\1. Dev Project\C#\Csharp-Winform-for-Schoolworks-Term01\โปรแกรมคิดเงิน 1\โปรแกรมคิดเงิน 1\obj\x86\Debug\โปรแกรมคิดเงิน 1.pdb
