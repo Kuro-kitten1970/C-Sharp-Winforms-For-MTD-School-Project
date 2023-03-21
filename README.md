@@ -1,10 +1,10 @@
-# C-Sharp Winform For MTD School Project
+# C-Sharp Winforms For MTD School Project
 
 ## Description
-![lang](https://img.shields.io/github/languages/top/Kuro-kittendotcom/C-Sharp-Winform-For-MTD-School-Project?logo=license)
+![lang](https://img.shields.io/github/languages/top/Kuro-kittendotcom/C-Sharp-Winforms-For-MTD-School-Project?logo=license)
 ![VS2010](https://img.shields.io/badge/Visual_Studio-2010-orange)
-![license](https://img.shields.io/github/license/Kuro-kittendotcom/C-Sharp-Winform-For-MTD-School-Project?logo=license)
-![last_commit](https://img.shields.io/github/last-commit/Kuro-kittendotcom/C-Sharp-Winform-For-MTD-School-Project?logo=last_commit)
+![license](https://img.shields.io/github/license/Kuro-kittendotcom/C-Sharp-Winforms-For-MTD-School-Project?logo=license)
+![last_commit](https://img.shields.io/github/last-commit/Kuro-kittendotcom/C-Sharp-Winforms-For-MTD-School-Project?logo=last_commit)
 
 [EN] I have collect computer programming subject assignments from Matthayom Dankhunthod School. Everyone can use it for free!
 
@@ -24,7 +24,7 @@
 ![guide1](IMG/guide_1.png)
 
 - ต่อมาท่านจะเห็นเมนูที่มีหลากหลายตัวเลือก ซึ่งสำหรับท่านที่ไม่เคยใช้ ```GitHub``` มาก่อนผมขอแนะนำให้ท่านกดตรง ```Download ZIP``` ในหน้าเมนู หรือกดคลิกดาวน์โหลดผ่านปุ่ม 
-<a class="button" href="https://github.com/Kuro-kittendotcom/C-Sharp-Winform-For-MTD-School-Project/archive/HEAD.zip" aria-label="Download">![Open Document](https://img.shields.io/badge/DOWNLOAD-ZIP-success)</a>
+<a class="button" href="https://github.com/Kuro-kittendotcom/C-Sharp-Winforms-For-MTD-School-Project/archive/HEAD.zip" aria-label="Download">![Open Document](https://img.shields.io/badge/DOWNLOAD-ZIP-success)</a>
 
 ![guide2](IMG/guide_2.png)
 
