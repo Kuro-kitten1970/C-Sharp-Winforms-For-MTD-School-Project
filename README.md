@@ -1,6 +1,6 @@
 # CS Winform For MTD School Project
 
-## Description
+## Description ![lang](https://img.shields.io/github/languages/top/Kuro-kittendotcom/CS-Winform-For-MTD-School-Project?logo=license) ![license](https://img.shields.io/github/license/Kuro-kittendotcom/CS-Winform-For-MTD-School-Project?logo=license)
 
 [EN] I have collect computer programming subject assignments from Matthayom Dankhunthod School. Everyone can use it for free!
 
@@ -11,31 +11,19 @@
 - มีเอกสารไว้สำหรับอธิบายเนื้อหา รวมไปถึงรูปแบบการทำงานของโปรแกรมให้
 - ใช้ได้ฟรีทุกเนื้ัอหา
 
+---
+
 ## วิธีการดาวน์โหลด
-    ![alt text](assets/images/screenshot.png)
 
+- เมื่อทุกท่านอยู่ในหน้าแบบนี้แล้ว ท่านจะสังเกตเห็นปุ่มที่ชื่อว่า ```Code``` ให้ท่านคลิกเข้าไป 1 ครั้ง
 
-## Usage
+![guide1](IMG/guide_1.png)
 
-Provide instructions and examples for use. Include screenshots as needed.
+- ต่อมาท่านจะเห็นเมนูที่มีหลากหลายตัวเลือก ซึ่งสำหรับท่านที่ไม่เคยใช้ ```GitHub``` มาก่อนผมขอแนะนำให้ท่านกดตรง ```Download ZIP```
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+![guide2](IMG/guide_2.png)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+- เมื่อท่านกดไปแล้วมันก็จะทำการดาวน์ไฟล์ให้ ซึ่งไฟล์ที่่ดาวน์โหลดส่วนใหญ่จะอยู่ที่โฟลเดอร์ ```Downloads``` ในคอมพิวเตอร์ของท่าน จากนั้นให้ค้นหาไฟล์ที่ดาวน์โหลดไว้ และทำการแตกไฟล์ เพื่อนำงานต่าง ๆ ไปใช้ตามที่ท่านต้องการ
 
 ---
 
