@@ -1,4 +1,4 @@
-# C-Sharp Winform For MTD School Project
+# C-Sharp Winforms For MTD School Project
 
 ## Description
 ![lang](https://img.shields.io/github/languages/top/Kuro-kittendotcom/C-Sharp-Winform-For-MTD-School-Project?logo=license)
