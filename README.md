@@ -1,6 +1,10 @@
 # CS Winform For MTD School Project
 
-## Description ![lang](https://img.shields.io/github/languages/top/Kuro-kittendotcom/CS-Winform-For-MTD-School-Project?logo=license) ![license](https://img.shields.io/github/license/Kuro-kittendotcom/CS-Winform-For-MTD-School-Project?logo=license)
+## Description
+![lang](https://img.shields.io/github/languages/top/Kuro-kittendotcom/CS-Winform-For-MTD-School-Project?logo=license)
+![VS2010](https://img.shields.io/badge/Visual_Studio-2010-orange)
+![license](https://img.shields.io/github/license/Kuro-kittendotcom/CS-Winform-For-MTD-School-Project?logo=license)
+![last_commit](https://img.shields.io/github/last-commit/Kuro-kittendotcom/CS-Winform-For-MTD-School-Project?logo=last_commit)
 
 [EN] I have collect computer programming subject assignments from Matthayom Dankhunthod School. Everyone can use it for free!
 
@@ -19,7 +23,8 @@
 
 ![guide1](IMG/guide_1.png)
 
-- ต่อมาท่านจะเห็นเมนูที่มีหลากหลายตัวเลือก ซึ่งสำหรับท่านที่ไม่เคยใช้ ```GitHub``` มาก่อนผมขอแนะนำให้ท่านกดตรง ```Download ZIP```
+- ต่อมาท่านจะเห็นเมนูที่มีหลากหลายตัวเลือก ซึ่งสำหรับท่านที่ไม่เคยใช้ ```GitHub``` มาก่อนผมขอแนะนำให้ท่านกดตรง ```Download ZIP``` ในหน้าเมนู หรือกดคลิกดาวน์โหลดผ่านปุ่ม 
+<a class="button" href="https://github.com/Kuro-kittendotcom/CS-Winform-For-MTD-School-Project/archive/HEAD.zip" aria-label="Download">![Open Document](https://img.shields.io/badge/DOWNLOAD-ZIP-success)</a>
 
 ![guide2](IMG/guide_2.png)
 
@@ -27,20 +32,7 @@
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
-## Badges
+## เอกสารอ้างอิง
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
+<a class="button" href="https://docs.google.com/document/d/1boVGrmKsuQ8GAoloAz6_CN0i-6rlCV_YaBS4v2QZC94/edit?usp=sharing" aria-label="doc">![Open Document](https://img.shields.io/badge/OPEN-DOCUMENT-informational)</a>
