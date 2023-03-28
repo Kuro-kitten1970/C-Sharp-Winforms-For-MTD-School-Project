@@ -113,6 +113,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox3.Enabled = false;
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
             this.textBox3.Location = new System.Drawing.Point(164, 129);
             this.textBox3.MaxLength = 20;
             this.textBox3.Name = "textBox3";
@@ -181,6 +182,7 @@
             this.divButton.Text = "/";
             this.divButton.UseVisualStyleBackColor = false;
             this.divButton.Click += new System.EventHandler(this.divButton_Click);
+            this.divButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.divButton_KeyUp);
             // 
             // clearButton
             // 
@@ -192,7 +194,7 @@
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(110, 45);
             this.clearButton.TabIndex = 10;
-            this.clearButton.Text = "Clear";
+            this.clearButton.Text = "รีเซ็ท";
             this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
@@ -206,14 +208,14 @@
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(110, 45);
             this.exitButton.TabIndex = 11;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "ออก";
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Crabform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 32F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(790, 221);
             this.Controls.Add(this.exitButton);
@@ -232,8 +234,10 @@
             this.ForeColor = System.Drawing.Color.Yellow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.MaximizeBox = false;
             this.Name = "Crabform";
             this.Padding = new System.Windows.Forms.Padding(30, 25, 30, 25);
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "โปรแกรมเครื่องคิดเลข";
             this.ResumeLayout(false);

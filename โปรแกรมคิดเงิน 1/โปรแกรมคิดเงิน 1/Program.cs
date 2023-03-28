@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace โปรแกรมเครื่องคิดเงิน
+namespace โปรแกรมคิดเงิน_1
 {
     static class Program
     {
@@ -14,7 +14,7 @@ namespace โปรแกรมเครื่องคิดเงิน
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(true);
+            Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Crabform());
         }
     }

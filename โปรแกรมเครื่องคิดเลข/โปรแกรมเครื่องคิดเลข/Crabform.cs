@@ -19,12 +19,12 @@ namespace โปรแกรมเครื่องคิดเงิน
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
         //คีย์เวิร์ด
-        // num1, num2 และ result  คือ ตัวแปรใช้เก็บค่าจากผู้ใช้
+        // num1, num2 และ result  คือ ตัวแปรที่ใช้เก็บค่าต่าง ๆ
         // numClick และ keys  ใช้เก็บค่าของกุญแจที่จะนำไปใช้ในการจัดการทางเลือกของโปรแกรม
-        // clearItems(), err() และ myCalc()  คือ เมธอดที่เราสร้างขึ้นเอง
+        // clearItems(), err() และ myCalc()  คือ เมธอดที่เราสร้างขึ้นมาเอง
         // textBox1, textBox2 และ textBox3  คือ กล่องข้อความที่ใช้รับค่าจากผู้ใช้ก่อนจะนำไปเก็บในตัวแปร
         // exitButton, clearButton, addButton, subButton, multiButton และ divButton
-        // ปุ่ม Exit   , ปุ่ม Clear  , ปุ่ม +     , ปุ่ม -     , ปุ่ม *       และ  ปุ่ม /
+        // ปุ่ม ออก   , ปุ่ม รีเซ็ท    , ปุ่ม +     , ปุ่ม -     , ปุ่ม *       และ  ปุ่ม /
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -61,16 +61,16 @@ namespace โปรแกรมเครื่องคิดเงิน
                 }
                 else if (textBox2.Text == "" || textBox2.Text == null)
                 {
-                    err();
+                    err(); //เรียกใช้เมธอด
                     textBox2.Focus();
                 }
                 else
                 {
-                    //แปลงชนิดข้อมูลจาก string ไปหา double
+                    //แปลงชนิดข้อมูลจาก string ไปหา double โดยรับค่าจาก textBox และส่งค่าที่แปลงได้ไปเก็บที่ num1, num2
                     num1 = double.Parse(textBox1.Text);
                     num2 = double.Parse(textBox2.Text);
 
-                    switch (numClick)
+                    switch (numClick) //ใช้เลือกหนึ่งในโค้ดบล็อกจากทั้งหมด โดยจะรันคำสั่งเมื่อค่าใน numClick ตรงกับกรณีต่าง ๆ  
                     {
                         case 1:
                             result = num1 + num2;
@@ -89,7 +89,7 @@ namespace โปรแกรมเครื่องคิดเงิน
                             break;
                     }
 
-                    textBox3.Text = result.ToString("0.########"); //แสดงผลลัพธ์ไปที่ textBox3
+                    textBox3.Text = result.ToString("0.########"); //นำค่าจากที่ได้จาก result ไปแสดงผลไปที่ textBox3
                 }
             }
             catch (Exception) //ใช้ดักจับ Exception ในกรณีที่ double.Parse ไม่สามารถแปลงค่าได้
@@ -103,7 +103,7 @@ namespace โปรแกรมเครื่องคิดเงิน
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //ตั้งแต่ส่วนนี้จะเป็นอีเว้นท์ที่ได้จากการที่เราดับเบิลคลิกตรงออบเจ็กท์ที่หน้าฟอร์ม
+        //ตั้งแต่ส่วนนี้จะเป็นส่วนที่ได้จากการที่เราดับเบิลคลิกตรงออบเจ็กท์ที่หน้าฟอร์ม
         private void exitButton_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("คุณต้องการออกจากโปรแกรมหรือไม่", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
@@ -116,6 +116,7 @@ namespace โปรแกรมเครื่องคิดเงิน
         {
             clearItems(); //เรียกใช้เมธอด
             textBox1.Focus();
+            keys = 0;
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -155,7 +156,7 @@ namespace โปรแกรมเครื่องคิดเงิน
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //ตรงส่วนนี้จะเป็นอีเว้นท์ KeyUp ได้จากการที่เราไปที่หน้า Events (รูปสายฟ้า) ในเมนู Properties
-        //แต่เราจำเป็นคลิกตรงออบเจ็กท์ในหน้าฟอร์มหนึ่งครั้งก่อน
+        //แต่เราจำเป็นคลิกตรงออบเจ็กท์ที่ต้องการจัดการอีเว้นท์ในหน้าฟอร์มหนึ่งครั้งก่อน
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter && keys == 1)
@@ -193,6 +194,14 @@ namespace โปรแกรมเครื่องคิดเงิน
             if (e.KeyCode == Keys.Enter)
             {
                 divButton.Focus();
+            }
+        }
+
+        private void divButton_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                clearButton.Focus();
             }
         }
     }
