@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.calcButton = new System.Windows.Forms.Button();
-            this.changeButton = new System.Windows.Forms.Button();
-            this.clearButton = new System.Windows.Forms.Button();
-            this.exitButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -78,63 +78,63 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "รับเงินมา";
             // 
-            // calcButton
+            // button1
             // 
-            this.calcButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.calcButton.BackColor = System.Drawing.Color.Yellow;
-            this.calcButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.calcButton.Location = new System.Drawing.Point(36, 140);
-            this.calcButton.Margin = new System.Windows.Forms.Padding(6);
-            this.calcButton.Name = "calcButton";
-            this.calcButton.Size = new System.Drawing.Size(150, 46);
-            this.calcButton.TabIndex = 3;
-            this.calcButton.Text = "คิดเงิน";
-            this.calcButton.UseVisualStyleBackColor = false;
-            this.calcButton.Click += new System.EventHandler(this.calcButton_Click);
-            this.calcButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.calcButton_KeyUp);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(36, 140);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 46);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "คิดเงิน";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button1_KeyUp);
             // 
-            // changeButton
+            // button2
             // 
-            this.changeButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.changeButton.BackColor = System.Drawing.Color.Yellow;
-            this.changeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.changeButton.Location = new System.Drawing.Point(36, 270);
-            this.changeButton.Margin = new System.Windows.Forms.Padding(6);
-            this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(150, 45);
-            this.changeButton.TabIndex = 4;
-            this.changeButton.Text = "ทอนเงิน";
-            this.changeButton.UseVisualStyleBackColor = false;
-            this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
-            this.changeButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.changeButton_KeyUp);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Location = new System.Drawing.Point(36, 270);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 45);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "ทอนเงิน";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button2_KeyUp);
             // 
-            // clearButton
+            // button3
             // 
-            this.clearButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.clearButton.BackColor = System.Drawing.Color.Yellow;
-            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.clearButton.Location = new System.Drawing.Point(216, 380);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(6);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(150, 45);
-            this.clearButton.TabIndex = 5;
-            this.clearButton.Text = "รีเซ็ท";
-            this.clearButton.UseVisualStyleBackColor = false;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Location = new System.Drawing.Point(216, 380);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 45);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "รีเซ็ท";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // exitButton
+            // button4
             // 
-            this.exitButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.exitButton.BackColor = System.Drawing.Color.Red;
-            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exitButton.Location = new System.Drawing.Point(404, 380);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(6);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(150, 45);
-            this.exitButton.TabIndex = 6;
-            this.exitButton.Text = "ออก";
-            this.exitButton.UseVisualStyleBackColor = false;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Location = new System.Drawing.Point(404, 380);
+            this.button4.Margin = new System.Windows.Forms.Padding(6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(150, 45);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "ออก";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox1
             // 
@@ -223,10 +223,10 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.clearButton);
-            this.Controls.Add(this.changeButton);
-            this.Controls.Add(this.calcButton);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -248,10 +248,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button calcButton;
-        private System.Windows.Forms.Button changeButton;
-        private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;

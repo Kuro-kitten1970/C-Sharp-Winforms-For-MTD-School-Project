@@ -18,16 +18,6 @@ namespace โปรแกรมตัดเกรด
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //คีย์เวิร์ด
-        // grade, score1, score2, score3 และ result  คือ ตัวแปรที่ใช้เก็บค่าต่าง ๆ
-        // keyOP  คือ ตัวแปรที่จะใช้เก็บค่าตรรกศาสตร์ เพื่อที่จะนำไปใช้ในการจัดการทางเลือกของโปรแกรม
-        // clearItems() และ err()  คือ เมธอดที่เราสร้างขึ้นมาเอง
-        // textBox1, textBox2, textBox3 และ textBox4  คือ กล่องข้อความที่ใช้รับค่าจากผู้ใช้ก่อนจะนำไปเก็บในตัวแปร
-        // exitButton, clearButton และ calcButton
-        // ปุ่ม ออก   , ปุ่ม รีเซ็ท     และ ปุ่ม ตัดเกรด  
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
         //ประกาศตัวแปร
         public double score1, score2, score3, result;
         public bool keyOP = true;
@@ -36,7 +26,7 @@ namespace โปรแกรมตัดเกรด
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //เมธอดที่ไว้สำหรับเคลียร์ textBox
-        public void clearItems()
+        private void clearItems()
         {
             textBox1.Clear();
             textBox2.Clear();
@@ -61,7 +51,7 @@ namespace โปรแกรมตัดเกรด
             label5.Text = "";
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("คุณต้องการออกจากโปรแกรมหรือไม่", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
@@ -69,13 +59,13 @@ namespace โปรแกรมตัดเกรด
             }
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             clearItems();
             keyOP = false;
         }
 
-        private void calcButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -197,15 +187,15 @@ namespace โปรแกรมตัดเกรด
         {
             if (e.KeyCode == Keys.Enter && keyOP == true)
             {
-                calcButton.Focus();
+                button1.Focus();
             }
         }
 
-        private void calcButton_KeyUp(object sender, KeyEventArgs e)
+        private void button1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter && keyOP == true)
             {
-                clearButton.Focus();
+                button2.Focus();
             }
         }
     }

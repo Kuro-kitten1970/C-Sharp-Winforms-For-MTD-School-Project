@@ -37,8 +37,8 @@
             this.status2 = new System.Windows.Forms.RadioButton();
             this.status1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.acceptButton = new System.Windows.Forms.Button();
-            this.cancelButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -154,29 +154,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // acceptButton
+            // button1
             // 
-            this.acceptButton.BackColor = System.Drawing.Color.Lime;
-            this.acceptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.acceptButton.Location = new System.Drawing.Point(127, 278);
-            this.acceptButton.Name = "acceptButton";
-            this.acceptButton.Size = new System.Drawing.Size(106, 42);
-            this.acceptButton.TabIndex = 0;
-            this.acceptButton.Text = "ตกลง";
-            this.acceptButton.UseVisualStyleBackColor = false;
-            this.acceptButton.Click += new System.EventHandler(this.acceptButton_Click);
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(127, 278);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 42);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "ตกลง";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cancelButton
+            // button2
             // 
-            this.cancelButton.BackColor = System.Drawing.Color.Red;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point(249, 278);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(106, 42);
-            this.cancelButton.TabIndex = 4;
-            this.cancelButton.Text = "ยกเลิก";
-            this.cancelButton.UseVisualStyleBackColor = false;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(249, 278);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 42);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "ยกเลิก";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Crabform
             // 
@@ -184,8 +184,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(485, 356);
-            this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.acceptButton);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -218,8 +218,8 @@
         private System.Windows.Forms.RadioButton status2;
         private System.Windows.Forms.RadioButton status1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button acceptButton;
-        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

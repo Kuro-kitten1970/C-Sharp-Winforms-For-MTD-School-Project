@@ -33,8 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.acceptButton = new System.Windows.Forms.Button();
-            this.cancelButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +80,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 38);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
             // textBox2
@@ -93,33 +94,34 @@
             this.textBox2.Size = new System.Drawing.Size(200, 38);
             this.textBox2.TabIndex = 4;
             this.textBox2.UseSystemPasswordChar = true;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.textBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyUp);
             // 
-            // acceptButton
+            // button1
             // 
-            this.acceptButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.acceptButton.BackColor = System.Drawing.Color.Cyan;
-            this.acceptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.acceptButton.Location = new System.Drawing.Point(446, 259);
-            this.acceptButton.Name = "acceptButton";
-            this.acceptButton.Size = new System.Drawing.Size(103, 38);
-            this.acceptButton.TabIndex = 5;
-            this.acceptButton.Text = "ตกลง";
-            this.acceptButton.UseVisualStyleBackColor = false;
-            this.acceptButton.Click += new System.EventHandler(this.acceptButton_Click);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.Cyan;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(446, 259);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 38);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "ตกลง";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cancelButton
+            // button2
             // 
-            this.cancelButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cancelButton.BackColor = System.Drawing.Color.Red;
-            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelButton.Location = new System.Drawing.Point(446, 304);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(103, 38);
-            this.cancelButton.TabIndex = 6;
-            this.cancelButton.Text = "ยกเลิก";
-            this.cancelButton.UseVisualStyleBackColor = false;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(446, 304);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(103, 38);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "ยกเลิก";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // checkBox1
             // 
@@ -141,8 +143,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(582, 383);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.acceptButton);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -155,6 +157,7 @@
             this.Padding = new System.Windows.Forms.Padding(30);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "โปรแกรมล็อกอิน";
+            this.Load += new System.EventHandler(this.Carbform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -168,8 +171,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button acceptButton;
-        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox1;
     }
 }

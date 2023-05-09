@@ -16,26 +16,14 @@ namespace โปรแกรมเครื่องคิดเงิน
             InitializeComponent();
         }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        
-        //คีย์เวิร์ด
-        // num1, num2 และ result  คือ ตัวแปรที่ใช้เก็บค่าต่าง ๆ
-        // numClick และ keys  ใช้เก็บค่าของกุญแจที่จะนำไปใช้ในการจัดการทางเลือกของโปรแกรม
-        // clearItems(), err() และ myCalc()  คือ เมธอดที่เราสร้างขึ้นมาเอง
-        // textBox1, textBox2 และ textBox3  คือ กล่องข้อความที่ใช้รับค่าจากผู้ใช้ก่อนจะนำไปเก็บในตัวแปร
-        // exitButton, clearButton, addButton, subButton, multiButton และ divButton
-        // ปุ่ม ออก   , ปุ่ม รีเซ็ท    , ปุ่ม +     , ปุ่ม -     , ปุ่ม *       และ  ปุ่ม /
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
         //ประกาศตัวแปร
         public double num1, num2, result;
-        public byte numClick, keys = 1;
+        public byte numClick, key = 1;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //เมธอดที่ไว้สำหรับเคลียร์ textBox
-        public void clearItems()
+        private void clearItems()
         {
             textBox1.Clear();
             textBox2.Clear();
@@ -46,7 +34,7 @@ namespace โปรแกรมเครื่องคิดเงิน
         public void err()
         {
             MessageBox.Show("เกิดข้อผิดพลาดกรุณาใส่ตัวเลข", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            keys = 0;
+            key = 0;
         }
 
         //เมธอดที่ไว้สำหรับคำนวณทางคณิตศาสตร์
@@ -97,14 +85,14 @@ namespace โปรแกรมเครื่องคิดเงิน
                 MessageBox.Show("เกิดข้อผิดพลาดกรุณาใส่เฉพาะตัวเลข", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 clearItems(); //เรียกใช้เมธอด
                 textBox1.Focus();
-                keys = 0;
+                key = 0;
             }
         }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //ตั้งแต่ส่วนนี้จะเป็นส่วนที่ได้จากการที่เราดับเบิลคลิกตรงออบเจ็กท์ที่หน้าฟอร์ม
-        private void exitButton_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("คุณต้องการออกจากโปรแกรมหรือไม่", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
@@ -112,32 +100,32 @@ namespace โปรแกรมเครื่องคิดเงิน
             }
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
             clearItems(); //เรียกใช้เมธอด
             textBox1.Focus();
-            keys = 0;
+            key = 0;
         }
 
-        private void addButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             numClick = 1;
             myCalc(); //เรียกใช้เมธอด
         }
 
-        private void subButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             numClick = 2;
             myCalc(); //เรียกใช้เมธอด
         }
 
-        private void multiButton_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             numClick = 3;
             myCalc(); //เรียกใช้เมธอด
         }
 
-        private void divButton_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             numClick = 4;
             myCalc(); //เรียกใช้เมธอด
@@ -145,12 +133,12 @@ namespace โปรแกรมเครื่องคิดเงิน
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            keys = 1;
+            key = 1;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            keys = 1;
+            key = 1;
         }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -159,7 +147,7 @@ namespace โปรแกรมเครื่องคิดเงิน
         //แต่เราจำเป็นคลิกตรงออบเจ็กท์ที่ต้องการจัดการอีเว้นท์ในหน้าฟอร์มหนึ่งครั้งก่อน
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter && keys == 1)
+            if (e.KeyCode == Keys.Enter && key == 1)
             {
                 textBox2.Focus();
             }
@@ -167,41 +155,41 @@ namespace โปรแกรมเครื่องคิดเงิน
 
         private void textBox2_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter && keys == 1)
+            if (e.KeyCode == Keys.Enter && key == 1)
             {
-                addButton.Focus();
+                button1.Focus();
             }
         }
 
-        private void addButton_KeyUp(object sender, KeyEventArgs e)
+        private void button1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                subButton.Focus();
+                button2.Focus();
             }
         }
 
-        private void subButton_KeyUp(object sender, KeyEventArgs e)
+        private void button2_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                multiButton.Focus();
+                button3.Focus();
             }
         }
 
-        private void multiButton_KeyUp(object sender, KeyEventArgs e)
+        private void button3_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                divButton.Focus();
+                button4.Focus();
             }
         }
 
-        private void divButton_KeyUp(object sender, KeyEventArgs e)
+        private void button4_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                clearButton.Focus();
+                button5.Focus();
             }
         }
     }

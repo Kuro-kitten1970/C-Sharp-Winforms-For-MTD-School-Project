@@ -18,16 +18,6 @@ namespace โปรแกรมตัวเลือกสถานภาพ
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //คีย์เวิร์ด
-        // sex1, sex2 และ status1 - status4  คือ เครื่องมือตัวเลือกที่จะเลือกได้เพียงแค่ตัวใดตัวหนึ่ง ภายใต้ groupBox เดียวกัน
-        // Sex และ Status  คือ ตัวแปรที่ใช้เก็บค่าต่าง ๆ
-        // (หรือก็คือ radioButton ที่ถูกเปลี่ยนชื่อ)
-        // label1  คือ ข้อความที่ใช้แสดงผลให้กับผู้ใช้
-        // cancelButton และ acceptButton
-        // ปุ่ม ยกเลิก     และ ปุ่ม ตกลง     
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
         //ประกาศตัวแปร
         public string Sex = "", Status = "";
 
@@ -39,7 +29,7 @@ namespace โปรแกรมตัวเลือกสถานภาพ
             label1.Text = "";
         }
 
-        private void acceptButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             if (sex1.Checked == true)
             {
@@ -83,7 +73,7 @@ namespace โปรแกรมตัวเลือกสถานภาพ
             }
         }
 
-        private void cancelButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Sex = "";
             Status = "";

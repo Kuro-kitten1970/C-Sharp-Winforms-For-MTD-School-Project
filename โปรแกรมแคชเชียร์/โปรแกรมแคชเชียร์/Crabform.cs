@@ -18,16 +18,6 @@ namespace โปรแกรมแคชเชียร์
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //คีย์เวิร์ด
-        // items, lists และ getMoney  คือ ตัวแปรที่ใช้เก็บค่าต่าง ๆ
-        // keyOP และ checkInput  คือ ตัวแปรที่จะใช้เก็บค่าตรรกศาสตร์ เพื่อที่จะนำไปใช้ในการจัดการทางเลือกของโปรแกรม
-        // textBox1, textBox2 และ textBox3  คือ กล่องข้อความที่ใช้รับค่าจากผู้ใช้ก่อนจะนำไปเก็บในตัวแปร
-        // checkBox1 - checkBox5  คือ เครื่องมือที่ให้ผู้ใช้เลือกหรือยกเลิกการดำเนินการต่าง ๆ
-        // exitButton, clearButton, calcButton และ changeButton
-        // ปุ่ม ออก   , ปุ่ม รีเซ็ท    , ปุ่มคิดเงิน    และ ปุ่มทอนเงิน   
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
         //ประกาศตัวแปร
         public int items = 0, getMoney = 0;
         public string lists;
@@ -41,7 +31,7 @@ namespace โปรแกรมแคชเชียร์
             label1.Text = "";
         }
 
-        private void calcButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Start:  //จุดที่เรากำหนดไว้ เพื่อให้โปรแกรมกลับมาทำงานอีกครั้ง โดยจะเริ่มรันคำสั่งใหม่จากจุดนี้ลงไป
             if (keyOP == true)
@@ -87,7 +77,7 @@ namespace โปรแกรมแคชเชียร์
             label1.Text = lists;
         }
 
-        private void changeButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             //แปลงชนิดข้อมูลจาก string ไปหา int โดยรับค่าจาก textBox และส่งค่าที่แปลงได้ไปเก็บที่ getMoney
             bool checkInput = int.TryParse(textBox2.Text, out getMoney);
@@ -104,7 +94,7 @@ namespace โปรแกรมแคชเชียร์
             }
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             checkBox1.Checked = false;
             checkBox2.Checked = false;
@@ -117,7 +107,7 @@ namespace โปรแกรมแคชเชียร์
             label1.Text = "";
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("คุณต้องการออกจากโปรแกรมหรือไม่", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {

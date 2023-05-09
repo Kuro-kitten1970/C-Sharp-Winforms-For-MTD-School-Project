@@ -14,47 +14,54 @@ namespace โปรแกรมล็อกอิน
         public Carbform()
         {
             InitializeComponent();
-
-            pictureBox1.Image = Image.FromFile(logoImage);  //อย่าลืมเขียนโค้ดนี้ด้วยนะ
         }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //คีย์เวิร์ด
-        // errorImage, logoImage และ userImage คือ ตัวแปรที่ใช้เก็บ Filepath ของรูปภาพ
-        // err()  คือ เมธอดที่เราสร้างขึ้นมาเอง
-        // textBox1 และ textBox2  คือ กล่องข้อความที่ใช้รับค่าจากผู้ใช้ก่อนจะนำไปเก็บในตัวแปร
-        // acceptButton และ cancelButton
-        // ปุ่ม ออก       และ ปุ่ม ยกเลิก / ล็อกเอาท์
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /* Note */
+        /* จะมี 2 วิธีที่เราสามารถนำรูปมาใช้ในโปรแกรมได้
+           1. Import รูปเข้า Resources.resx (วิธีนี้ง่าย) 
+           2. ใช้ filepath ในการระบุที่อยู่ของรูป (วิธีที่เราใช้)
+         
+           ซึ่งเราใช้วิธีที่ 2 เพราะมันใช้แค่โค้ด แต่จะมีความยากตรงที่เราต้องระบุที่อยู่ของรูปให้ถูกต้อง 
+           นอกจากนี้หากเรานำรูปมาไว้ที่โฟลเดอร์ img ที่เราได้สร้างขึ้นไว้ให้ เราจะต้องคลิกที่รูป 1 ครั้ง
+           และไปที่หน้า Properties เปลี่ยนค่าในตัวเลือก Copy To Output Directory จาก
+           Do not copy เปลี่ยนเป็น Copy always ในทุก ๆ ไฟล์เสมอ*/
 
         //ประกาศตัวแปร
-        public string errorImage = "./img/error.png";
-        public string logoImage = "./img/logo.png";
-        public string userImage = "./img/user.jpg";
+        public string errorImage = "./img/error.png"; //ประกาศตัวแปร เพื่อเก็บ filepath ในการระบุที่อยู่ของรูป
+        public string logoImage = "./img/logo.png"; //ประกาศตัวแปร เพื่อเก็บ filepath ในการระบุที่อยู่ของรูป
+        public string userImage = "./img/user.jpg"; //ประกาศตัวแปร เพื่อเก็บ filepath ในการระบุที่อยู่ของรูป
+        public bool keyOP = true;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //เมธอดที่ไว้สำหรับแสดงหน้า Error
         public void err()
         {
-            pictureBox1.Image = Image.FromFile(errorImage);
+            pictureBox1.Image = Image.FromFile(errorImage); //เปลี่ยนรูปใน pictureBox1
             MessageBox.Show("เกิดข้อผิดพลาด กรุณาตรวจสอบว่าท่านได้ใส่ข้อมูลหรือไม่", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //ตั้งแต่ส่วนนี้จะเป็นส่วนที่ได้จากการที่เราดับเบิลคลิกตรงออบเจ็กท์ที่หน้าฟอร์ม
-        private void acceptButton_Click(object sender, EventArgs e)
+        private void Carbform_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile(logoImage); //เปลี่ยนรูปใน pictureBox1
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "")
             {
+                keyOP = false;
                 err();  //เรียกใช้เมธอด
                 textBox1.Focus();
             }
             else if (textBox2.Text == "")
             {
+                keyOP = false;
                 err();  //เรียกใช้เมธอด
                 textBox2.Focus();
             }
@@ -62,26 +69,30 @@ namespace โปรแกรมล็อกอิน
             {
                 if (textBox1.Text == "Admin" && textBox2.Text == "123")
                 {
-                    pictureBox1.Image = Image.FromFile(userImage);
+                    pictureBox1.Image = Image.FromFile(userImage); //เปลี่ยนรูปใน pictureBox1
                     MessageBox.Show("ยินดีต้อนรับนายท่าน!", "WELCOME ADMIN!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    cancelButton.Text = "ล็อกเอาท์";
+                    button2.Text = "ล็อกเอาท์";
                 }
                 else 
                 {
-                    pictureBox1.Image = Image.FromFile(errorImage);
+                    pictureBox1.Image = Image.FromFile(errorImage); //เปลี่ยนรูปใน pictureBox1
                     MessageBox.Show("เกิดข้อผิดพลาด ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    button2.Text = "ยกเลิก";
+                    keyOP = false;
                 }
             }
         }
 
-        private void cancelButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            if (cancelButton.Text == "ล็อกเอาท์")
+            if (button2.Text == "ล็อกเอาท์")
             {
                 MessageBox.Show("หวังว่าเราจะได้พบกันอีกครั้งนะ", "BYE ADMIN!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            pictureBox1.Image = Image.FromFile(logoImage);
+            keyOP = false;
+
+            pictureBox1.Image = Image.FromFile(logoImage); //เปลี่ยนรูปใน pictureBox1
             textBox1.Clear();
             textBox2.Clear();
             textBox1.Focus();
@@ -99,13 +110,23 @@ namespace โปรแกรมล็อกอิน
             }
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            keyOP = true;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            keyOP = true;
+        }
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //ตรงส่วนนี้จะเป็นอีเว้นท์ KeyUp ได้จากการที่เราไปที่หน้า Events (รูปสายฟ้า) ในเมนู Properties
         //แต่เราจำเป็นคลิกตรงออบเจ็กท์ที่ต้องการจัดการอีเว้นท์ในหน้าฟอร์มหนึ่งครั้งก่อน
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter && keyOP == true)
             {
                 textBox2.Focus();
             }
@@ -113,9 +134,9 @@ namespace โปรแกรมล็อกอิน
 
         private void textBox2_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter && keyOP == true)
             {
-                acceptButton.Focus();
+                button1.Focus();
             }
         }
     }

@@ -38,9 +38,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.calcButton = new System.Windows.Forms.Button();
-            this.clearButton = new System.Windows.Forms.Button();
-            this.exitButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -209,54 +209,54 @@
             this.textBox5.TabStop = false;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // calcButton
+            // button1
             // 
-            this.calcButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.calcButton.BackColor = System.Drawing.Color.Lime;
-            this.calcButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.calcButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calcButton.Location = new System.Drawing.Point(42, 300);
-            this.calcButton.Margin = new System.Windows.Forms.Padding(6);
-            this.calcButton.Name = "calcButton";
-            this.calcButton.Size = new System.Drawing.Size(150, 44);
-            this.calcButton.TabIndex = 10;
-            this.calcButton.Text = "คิดเงิน";
-            this.calcButton.UseCompatibleTextRendering = true;
-            this.calcButton.UseVisualStyleBackColor = false;
-            this.calcButton.Click += new System.EventHandler(this.calcButton_Click);
-            this.calcButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.calcButton_KeyUp);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(42, 300);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 44);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "คิดเงิน";
+            this.button1.UseCompatibleTextRendering = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button1_KeyUp);
             // 
-            // clearButton
+            // button2
             // 
-            this.clearButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.clearButton.BackColor = System.Drawing.Color.Yellow;
-            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.Location = new System.Drawing.Point(225, 300);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(6);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(150, 44);
-            this.clearButton.TabIndex = 11;
-            this.clearButton.Text = "รีเซ็ท";
-            this.clearButton.UseCompatibleTextRendering = true;
-            this.clearButton.UseVisualStyleBackColor = false;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(225, 300);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 44);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "รีเซ็ท";
+            this.button2.UseCompatibleTextRendering = true;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // exitButton
+            // button3
             // 
-            this.exitButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.exitButton.BackColor = System.Drawing.Color.Red;
-            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(404, 300);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(6);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(150, 44);
-            this.exitButton.TabIndex = 12;
-            this.exitButton.Text = "ออก";
-            this.exitButton.UseCompatibleTextRendering = true;
-            this.exitButton.UseVisualStyleBackColor = false;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(404, 300);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 44);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "ออก";
+            this.button3.UseCompatibleTextRendering = true;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Crabform
             // 
@@ -264,9 +264,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(590, 381);
-            this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.clearButton);
-            this.Controls.Add(this.calcButton);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -303,9 +303,9 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button calcButton;
-        private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

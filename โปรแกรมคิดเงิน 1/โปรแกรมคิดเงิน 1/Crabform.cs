@@ -18,16 +18,6 @@ namespace โปรแกรมคิดเงิน_1
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //คีย์เวิร์ด
-        // item1, item2, result และ tax  คือ ตัวแปรที่ใช้เก็บค่าต่าง ๆ
-        // keyOP  คือ ตัวแปรที่จะใช้เก็บค่าตรรกศาสตร์ เพื่อที่จะนำไปใช้ในการจัดการทางเลือกของโปรแกรม
-        // clearItems() และ err()  คือ เมธอดที่เราสร้างขึ้นมาเอง
-        // textBox1, textBox2, textBox3, textBox4 และ textBox5  คือ กล่องข้อความที่ใช้รับค่าจากผู้ใช้ก่อนจะนำไปเก็บในตัวแปร
-        // exitButton, clearButton และ calcButton
-        // ปุ่ม ออก   , ปุ่ม รีเซ็ท     และ ปุ่มคิดเงิน   
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
         //ประกาศตัวแปร
         public double item1, item2, result, tax;
         public bool keyOP = true;
@@ -55,7 +45,7 @@ namespace โปรแกรมคิดเงิน_1
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //ตั้งแต่ส่วนนี้จะเป็นส่วนที่ได้จากการที่เราดับเบิลคลิกตรงออบเจ็กท์ที่หน้าฟอร์ม
-        private void exitButton_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("คุณต้องการออกจากโปรแกรมหรือไม่", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
@@ -63,13 +53,13 @@ namespace โปรแกรมคิดเงิน_1
             }
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             clearItems(); //เรียกใช้เมธอด
             keyOP = false;
         }
 
-        private void calcButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -107,12 +97,12 @@ namespace โปรแกรมคิดเงิน_1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            keyOP = false;
+            keyOP = true;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            keyOP = false;
+            keyOP = true;
         }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -131,15 +121,15 @@ namespace โปรแกรมคิดเงิน_1
         {
             if (e.KeyCode == Keys.Enter && keyOP == true)
             {
-                calcButton.Focus();
+                button1.Focus();
             }
         }
 
-        private void calcButton_KeyUp(object sender, KeyEventArgs e)
+        private void button1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter && keyOP == true)
             {
-                clearButton.Focus();
+                button2.Focus();
             }
         }
     }

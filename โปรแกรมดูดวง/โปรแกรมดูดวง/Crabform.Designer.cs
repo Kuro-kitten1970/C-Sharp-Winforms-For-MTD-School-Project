@@ -40,10 +40,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.nameBox = new System.Windows.Forms.TextBox();
-            this.fortuneButton = new System.Windows.Forms.Button();
-            this.clearButton = new System.Windows.Forms.Button();
-            this.exitButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -194,48 +194,48 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "โปรดระบุชื่อของท่าน";
             // 
-            // nameBox
+            // textBox1
             // 
-            this.nameBox.Location = new System.Drawing.Point(289, 27);
-            this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(368, 38);
-            this.nameBox.TabIndex = 0;
+            this.textBox1.Location = new System.Drawing.Point(289, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(368, 38);
+            this.textBox1.TabIndex = 0;
             // 
-            // fortuneButton
+            // button1
             // 
-            this.fortuneButton.BackColor = System.Drawing.Color.Lime;
-            this.fortuneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fortuneButton.Location = new System.Drawing.Point(126, 452);
-            this.fortuneButton.Name = "fortuneButton";
-            this.fortuneButton.Size = new System.Drawing.Size(120, 40);
-            this.fortuneButton.TabIndex = 3;
-            this.fortuneButton.Text = "ทำนาย";
-            this.fortuneButton.UseVisualStyleBackColor = false;
-            this.fortuneButton.Click += new System.EventHandler(this.fortuneButton_Click);
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(126, 452);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 40);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "ทำนาย";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // clearButton
+            // button2
             // 
-            this.clearButton.BackColor = System.Drawing.Color.Yellow;
-            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearButton.Location = new System.Drawing.Point(289, 452);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(120, 40);
-            this.clearButton.TabIndex = 4;
-            this.clearButton.Text = "รีเซ็ท";
-            this.clearButton.UseVisualStyleBackColor = false;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(289, 452);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(120, 40);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "รีเซ็ท";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // exitButton
+            // button3
             // 
-            this.exitButton.BackColor = System.Drawing.Color.Red;
-            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Location = new System.Drawing.Point(450, 452);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(120, 40);
-            this.exitButton.TabIndex = 5;
-            this.exitButton.Text = "ออก";
-            this.exitButton.UseVisualStyleBackColor = false;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(450, 452);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(120, 40);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "ออก";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Crabform
             // 
@@ -243,10 +243,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(690, 521);
-            this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.clearButton);
-            this.Controls.Add(this.fortuneButton);
-            this.Controls.Add(this.nameBox);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -280,12 +280,12 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox nameBox;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button fortuneButton;
-        private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

@@ -36,9 +36,9 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.calcButton = new System.Windows.Forms.Button();
-            this.clearButton = new System.Windows.Forms.Button();
-            this.exitButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -130,48 +130,48 @@
             this.textBox4.TabIndex = 7;
             this.textBox4.TabStop = false;
             // 
-            // calcButton
+            // button1
             // 
-            this.calcButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.calcButton.BackColor = System.Drawing.Color.Lime;
-            this.calcButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.calcButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calcButton.Location = new System.Drawing.Point(116, 288);
-            this.calcButton.Name = "calcButton";
-            this.calcButton.Size = new System.Drawing.Size(110, 40);
-            this.calcButton.TabIndex = 8;
-            this.calcButton.Text = "ตัดเกรด";
-            this.calcButton.UseVisualStyleBackColor = false;
-            this.calcButton.Click += new System.EventHandler(this.calcButton_Click);
-            this.calcButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.calcButton_KeyUp);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(116, 288);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 40);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "ตัดเกรด";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button1_KeyUp);
             // 
-            // clearButton
+            // button2
             // 
-            this.clearButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.clearButton.BackColor = System.Drawing.Color.Yellow;
-            this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearButton.Location = new System.Drawing.Point(289, 288);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(110, 40);
-            this.clearButton.TabIndex = 9;
-            this.clearButton.Text = "รีเซ็ท";
-            this.clearButton.UseVisualStyleBackColor = false;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(289, 288);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 40);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "รีเซ็ท";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // exitButton
+            // button3
             // 
-            this.exitButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.exitButton.BackColor = System.Drawing.Color.Red;
-            this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Location = new System.Drawing.Point(474, 288);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(110, 40);
-            this.exitButton.TabIndex = 10;
-            this.exitButton.Text = "ออก";
-            this.exitButton.UseVisualStyleBackColor = false;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(474, 288);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(110, 40);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "ออก";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label5
             // 
@@ -189,9 +189,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(665, 361);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.clearButton);
-            this.Controls.Add(this.calcButton);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -224,9 +224,9 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button calcButton;
-        private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
     }
 }

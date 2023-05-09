@@ -18,20 +18,10 @@ namespace โปรแกรมดูดวง
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //คีย์เวิร์ด
-        // radioButton1 - radioButton7  คือ เครื่องมือตัวเลือกที่จะเลือกได้เพียงแค่ตัวใดตัวหนึ่ง ภายใต้ groupBox เดียวกัน
-        // label2 และ label3  คือ ข้อความที่ใช้แสดงผลให้กับผู้ใช้
-        // clearItems()  คือ เมธอดที่เราสร้างขึ้นมาเอง
-        // nameBox  คือ กล่องข้อความที่ใช้รับค่าจากผู้ใช้ ซึ่งถูกเปลี่ยนชื่อมาจาก textBox
-        // exitButton, clearButton และ fortuneButton
-        // ปุ่ม ออก   , ปุ่ม รีเซ็ท     และ ปุ่ม ทำนาย
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
         //เมธอดที่มีไว้สำหรับรีเซ็ท nameBox, label และ radioButton
-        public void clearItems()
+        private void clearItems()
         {
-            nameBox.Clear();
+            textBox1.Clear();
             label2.Text = "";
             label3.Text = "";
             radioButton1.Checked = false;
@@ -41,7 +31,7 @@ namespace โปรแกรมดูดวง
             radioButton5.Checked = false;
             radioButton6.Checked = false;
             radioButton7.Checked = false;
-            nameBox.Focus();
+            textBox1.Focus();
         }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -53,7 +43,7 @@ namespace โปรแกรมดูดวง
             label3.Text = "";
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("คุณต้องการออกจากโปรแกรมหรือไม่", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
@@ -61,22 +51,22 @@ namespace โปรแกรมดูดวง
             }
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             clearItems(); //เรียกใช้เมธอด
         }
 
-        private void fortuneButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            //ถ้า nameBox ไม่มีข้อความใด ๆ เลย
-            if (nameBox.Text == "" || nameBox.Text == null)
+            //ถ้า textBox1 ไม่มีข้อความใด ๆ เลย
+            if (textBox1.Text == "" || textBox1.Text == null)
             {
                 MessageBox.Show("เกิดข้อผิดพลาด กรุณาระบุชื่อของท่าน", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 clearItems(); //เรียกใช้เมธอด
             }
             else 
             {
-                label2.Text = "สวัสดีท่าน " + nameBox.Text;
+                label2.Text = "สวัสดีท่าน " + textBox1.Text;
                 //แสดงผลข้อความไปที่ label2
 
                 //if statement ใช้เปรียบเทียบข้อมูล หรือค่าต่าง ๆ
