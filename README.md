@@ -23,7 +23,7 @@
 ![guide1](IMG/guide_1.png)
 
 - ต่อมาท่านจะเห็นเมนูที่มีหลากหลายตัวเลือก ซึ่งสำหรับท่านที่ไม่เคยใช้ ```GitHub``` มาก่อนผมขอแนะนำให้ท่านกดตรง ```Download ZIP``` ในหน้าเมนู หรือกดคลิกดาวน์โหลดผ่านปุ่ม 
-<a class="button" href="https://github.com/Kuro-kittendotcom/C-Sharp-Winforms-For-MTD-School-Project/archive/HEAD.zip" aria-label="Download">![Open Document](https://img.shields.io/badge/DOWNLOAD-ZIP-success)</a>
+<a class="button" href="https://github.com/Kuro-kitten1970/C-Sharp-Winforms-For-MTD-School-Project/archive/HEAD.zip" aria-label="Download">![Open Document](https://img.shields.io/badge/DOWNLOAD-ZIP-success)</a>
 
 ![guide2](IMG/guide_2.png)
 
